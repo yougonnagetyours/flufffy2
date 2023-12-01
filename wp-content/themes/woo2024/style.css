@@ -14,6 +14,20 @@ Text Domain: woo2024
 Tags: e-commerce, news, portfolio, one-column, wide-blocks, accessibility-ready, block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, rtl-language-support, sticky-post, style-variations, threaded-comments, translation-ready, blog
 */
 
-body {
-    color: red;
+/* body {
+    color: blue;
+} */
+
+.wp-block-navigation.navi-desktop {
+    display: none;
 }
+
+@media only screen and (min-width: 980px) {
+    .wp-block-navigation.navi-desktop {
+      display: block; /* Show .navi-top on desktop */
+    }
+  
+    .wp-block-navigation.navi-mobile {
+      display: none; /* Hide .navi-mobile on desktop */
+    }
+  }
